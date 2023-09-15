@@ -39,142 +39,171 @@
     <script defer src="./static/js/fontawesome.all.min.js"></script>
     <script src="./static/js/bulma-carousel.min.js"></script>
     <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/comp-slider.js" defer></script>
     <script src="./static/js/index.js"></script>
 </head>
 <body>
-
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">
-            Audio-Visual Speech Recognition In-the-Wild: Multi-Angle Vehicle Cabin Corpus and Attention-based Method
-          </h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://hci.nw.ru/en/employees/9">Alexandr Axyonov</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://hci.nw.ru/en/employees/3">Dmitry Ryumin</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://hci.nw.ru/en/employees/4">Denis Ivanko</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Alexey Kashevnik<sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://hci.nw.ru/en/employees/1">Alexey Karpov</a><sup>1, 2</sup>,
-            </span>
-          </div>
-
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup> St. Petersburg Institute for Informatics and Automation of the Russian Academy of Sciences, <a href="https://spcras.ru/en/">St. Petersburg Federal Research Center of the Russian Academy of Sciences (SPC RAS)</a>, St. Petersburg, Russia</span>
-            <span class="author-block"><sup>2</sup> <a href="https://en.itmo.ru/">ITMO University</a>, St. Petersburg, Russia</span>
-            <br />
-            <span><a href="https://2024.ieeeicassp.org/">ICASSP 2024</a> (submitted)</span>
-          </div>
-
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section">
-    <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-            <p>
-            In recent years, audio-visual speech recognition (AVSR) gains increasing attention as an important part of human-machine interaction. However, the publicly available corpora are limited and lack in-the-wild recordings, especially in driving conditions when acoustic signal is frequently corrupted by background noise. Research so far has been collected in constrained environments, and thus cannot reflect the true performance of AVSR systems in real-world scenarios. Often there are no data available for languages other than English. To meet the request for research on AVSR in unconstrained driving conditions, this paper presents a corpus collected ‘in-the-wild’. Along with this, we propose cross-modal attention method for robust multi-angle AVSR for vehicle conditions that leverages visual context to improve both: recognition accuracy and noise robustness. We compare the impact of different state-of-the-art methods on the AVSR system. Our proposed model achieves state-of-the-art results on AVSR with 98.65% accuracy in recognising driver voice commands.
-            </p>
-        </div>
-        </div>
-    </div>
-    </div>
-</section>
-<section class="hero teaser">
-    <div class="container is-max-desktop">
+    <section class="hero">
     <div class="hero-body">
-        <h2 class="title is-3">Coming soon!</h2>
-    </div>
-    </div>
-</section>
+        <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+                Audio-Visual Speech Recognition In-the-Wild: Multi-Angle Vehicle Cabin Corpus and Attention-based Method
+            </h1>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/9">Alexandr Axyonov</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/3">Dmitry Ryumin</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/4">Denis Ivanko</a><sup>1</sup>,
+                </span>
+                <span class="author-block">
+                Alexey Kashevnik<sup>1</sup>,
+                </span>
+                <span class="author-block">
+                <a href="https://hci.nw.ru/en/employees/1">Alexey Karpov</a><sup>1, 2</sup>,
+                </span>
+            </div>
 
-<footer class="footer">
-    <div class="container">
-    <div class="content has-text-centered">
-        <a class="icon-link external-link" href="https://github.com/dmitryryumin" disabled>
-        <i class="fab fa-github"></i>
-        </a>
-    </div>
-    <div class="columns is-centered">
-        <div class="column is-8">
-        <div class="content">
-            <p>
-            This page was built using the <a href="https://github.com/SMIL-SPCRAS/DAVIS" target="_blank">DAVIS project page</a>, which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-            </p>
+            <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup> St. Petersburg Institute for Informatics and Automation of the Russian Academy of Sciences, <a href="https://spcras.ru/en/">St. Petersburg Federal Research Center of the Russian Academy of Sciences (SPC RAS)</a>, St. Petersburg, Russia</span>
+                <span class="author-block"><sup>2</sup> <a href="https://en.itmo.ru/">ITMO University</a>, St. Petersburg, Russia</span>
+                <br />
+                <span><a href="https://2024.ieeeicassp.org/">ICASSP 2024</a> (submitted)</span>
+            </div>
+
+            <div class="column has-text-centered">
+                <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                    </a>
+                </span>
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                    </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                    </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                    <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                    </a>
+                </span>
+                </div>
+            </div>
+            </div>
         </div>
         </div>
     </div>
-    </div>
-</footer>
+    </section>
+    <section class="section">
+        <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    In recent years, audio-visual speech recognition (AVSR) gains increasing attention as an important part of human-machine interaction. However, the publicly available corpora are limited and lack in-the-wild recordings, especially in driving conditions when acoustic signal is frequently corrupted by background noise. Research so far has been collected in constrained environments, and thus cannot reflect the true performance of AVSR systems in real-world scenarios. Often there are no data available for languages other than English. To meet the request for research on AVSR in unconstrained driving conditions, this paper presents a corpus collected ‘in-the-wild’. Along with this, we propose cross-modal attention method for robust multi-angle AVSR for vehicle conditions that leverages visual context to improve both: recognition accuracy and noise robustness. We compare the impact of different state-of-the-art methods on the AVSR system. Our proposed model achieves state-of-the-art results on AVSR with 98.65% accuracy in recognising driver voice commands.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="comp-container">
+                <div class="image-container">
+                    <img class="image-before slider-image" src="../static/img/ex_1_1.png" alt="1">
+                    <img class="image-after slider-image" src="../static/img/ex_1_2.png" alt="2">
+                </div>
+                <input type="range" min="0" max="100" value="50" class="slider" aria-label="Percentage of before photo shown"/>
+
+                <div class="slider-line"></div>
+                <div class="slider-button" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#363636" viewBox="0 0 256 256"><path d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z"></path></svg>
+                </div>
+            </div>
+        </main>
+        <div class="method">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Method Overview</h2>
+                    <img class="img-method" src="./static/img/method.png" alt="method">
+
+                    <ul>
+                        <li> A general light field representation by unifying the neural incident light field (<b>NeILF</b>) and neural radiance field (<b>NeRF</b>) through <b>physically-based rendering</b> and <b>inter-reflection</b> between surfaces.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h2 class="title is-3">Coming soon!</h2>
+        </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+        <div class="content has-text-centered">
+            <a class="icon-link external-link" href="https://github.com/dmitryryumin" disabled>
+            <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <div class="columns is-centered">
+            <div class="column is-8">
+            <div class="content">
+                <p>
+                This page was built using the <a href="https://github.com/SMIL-SPCRAS/DAVIS" target="_blank">DAVIS project page</a>, which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+                You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
 
 </body>
 </html>
