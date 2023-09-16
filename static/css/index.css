@@ -30,6 +30,11 @@ body {
     width: 80%;
     border: none;
   }
+
+  .res-table {
+    border-collapse: collapse;
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -48,6 +53,10 @@ body {
   .table {
     width: 100%;
     border: none;
+  }
+  .res-table {
+    border-collapse: collapse;
+    width: 100%;
   }
 }
 
@@ -193,11 +202,6 @@ body {
 .table .centered th {
   text-align: center;
   vertical-align: middle;
-}
-
-.res-table {
-    border-collapse: collapse;
-    width: 80%;
 }
 
 .res-table thead th {
