@@ -3,8 +3,13 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --tw-bg-opacity: 1;
+  background-color: rgba(23,23,23,var(--tw-bg-opacity));
 }
 
+section {
+  background-color: #fafafa;
+}
 
 .database {
   margin-top: 80px;
@@ -13,7 +18,6 @@ body {
   display: block;
   text-align: center;
 }
-
 
 @media screen and (min-width: 700px) {
   .sliders {
@@ -34,6 +38,43 @@ body {
   .res-table {
     border-collapse: collapse;
     width: 80%;
+  }
+
+  #btt-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #363636;
+    background-color: #fafafa;
+    border-radius: .3rem;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: visible;
+    z-index: 1000;
+  }
+
+  #btt-button::after {
+    color: #fff;
+  }
+  #btt-button:hover {
+    cursor: pointer;
+    background-color: #209cee;
+    border: none;
+  }
+
+  #btt-button:active {
+    background-color: #0f4e79;
+  }
+
+  #btt-button.show {
+    opacity: 1;
+    visibility: visible;
   }
 }
 
