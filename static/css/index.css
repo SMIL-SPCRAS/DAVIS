@@ -11,9 +11,47 @@ section {
   background-color: #fafafa;
 }
 
-.database {
-  margin-top: 80px;
+.abstract-section {
+  padding: 0 24px;
 }
+
+.abstract-sect {
+  padding: 50px 0;
+  border-bottom: 1px solid #363636;
+  border-top: 1px solid #363636;
+}
+
+.database-section {
+  padding: 50px 0;
+
+}
+
+.method-section {
+  padding: 0 24px;
+
+}
+
+.method {
+  padding: 50px 0 80px 0;
+  border-bottom: 1px solid #363636;
+  border-top: 1px solid #363636;
+}
+
+.architectures-section {
+  padding: 0 24px;
+}
+
+.architectures {
+  padding: 50px 0;
+
+  border-bottom: 1px solid #363636;
+
+}
+
+.results {
+  padding: 50px 0px;
+}
+
 .database h2 {
   display: block;
   text-align: center;
@@ -79,7 +117,9 @@ section {
 }
 
 @media screen and (max-width: 700px) {
-
+  #btt-button {
+    visibility:hidden
+  }
   .sliders {
       display: flex;
       flex-direction: column;
@@ -101,25 +141,12 @@ section {
   }
 }
 
-
-.method {
-  margin-top: 80px;
-}
-
 .method img {
   margin-top: 50px;
 }
 
-.architectures {
-  margin-top: 80px;
-}
-
 .architectures img {
   margin-top: 50px;
-}
-
-.results {
-  margin-top: 80px;
 }
 
 .comp-container img {
