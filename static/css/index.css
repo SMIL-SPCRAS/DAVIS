@@ -6,13 +6,16 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgba(23,23,23,var(--tw-bg-opacity));
 }
-
+.hero-body {
+  padding-bottom: 0;
+}
 section {
   background-color: #fafafa;
 }
 
 .TODO-section {
-  padding: 50px 24px;
+  padding: 10px 24px;
+  margin-bottom: 20px;
 }
 
 .abstract-sect {
@@ -467,21 +470,22 @@ section {
 
 
 :root {
-  --duration: 0.8s;
+  --duration: 0.65s;
 }
 
 .todo-list {
   background: #FFF;
   max-width: 25em;
+  font-size: 12px;
   margin: auto;
-  padding: 0.5em 1em;
+  padding: 0.3em 0.2em;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .todo {
   display: block;
   position: relative;
-  padding: 1em 1em 1em 16%;
+  padding: 0.3em 0.3em 0.3em 13%;
   margin: 0 auto;
   cursor: pointer;
   border-bottom: solid 1px #ddd;
@@ -499,7 +503,7 @@ section {
 }
 
 .todo__text {
-  color: saturate(#1B4A4E, 25%);
+  color: saturate(#1B4A4E, 15%);
   transition: all var(--duration) linear var(--duration);
 }
 
@@ -512,8 +516,8 @@ section {
   height: auto;
   margin: auto;
   fill: none;
-  stroke: #27FDC7;
-  stroke-width: 2;
+  stroke: #363636;
+  stroke-width: 1;
   stroke-linejoin: round;
   stroke-linecap: round;
 }
@@ -553,15 +557,14 @@ section {
 }
 
 .todo__check {
-  stroke: #209CEE;
   stroke-dasharray: 9.8995 9.8995;
   stroke-dashoffset: 9.8995;
   transition-duration: calc(var(--duration) * 0.4);
 }
 
 .todo__line {
-  stroke-dasharray: 168 1684;
-  stroke-dashoffset: 168;
+  stroke-dasharray: 260 1684;
+  stroke-dashoffset: 260;
 }
 
 .todo__circle {
@@ -571,8 +574,7 @@ section {
 
 .todo__state:checked ~ .todo__text {
   transition-delay: 0s;
-  color: #5EBEC1;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .todo__state:checked ~ .todo__icon .todo__box {
@@ -581,7 +583,7 @@ section {
 }
 
 .todo__state:checked ~ .todo__icon .todo__line {
-  stroke-dashoffset: -8;
+  stroke-dashoffset: -5;
 }
 
 .todo__state:checked ~ .todo__icon .todo__check {
