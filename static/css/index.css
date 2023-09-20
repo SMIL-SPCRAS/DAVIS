@@ -17,6 +17,9 @@ section {
   padding: 10px 24px;
   margin-bottom: 20px;
 }
+.abstract-section {
+  padding: 0 24px;
+}
 
 .abstract-sect {
   padding: 50px 0;
