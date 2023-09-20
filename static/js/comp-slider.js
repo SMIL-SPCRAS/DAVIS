@@ -27,3 +27,24 @@ btn.addEventListener('click', function (e) {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+console.clear();
+
+const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+setTimeout(function () {
+    checkboxes[0].setAttribute('checked', true);
+}, 200);
+
+setTimeout(function () {
+    checkboxes[1].setAttribute('checked', true);
+}, 1000);
+
+setTimeout(function () {
+    checkboxes[2].setAttribute('checked', true);
+}, 1800);
+
+setTimeout(function () {
+    checkboxes[3].setAttribute('checked', true);
+}, 2600);
