@@ -56,6 +56,18 @@ section {
 
 .results {
   padding: 50px 0px;
+  border-bottom: 1px solid #363636;
+
+}
+
+
+.related {
+  padding: 50px 0px;
+  border-bottom: 1px solid #363636;
+}
+
+.related-section {
+  padding: 0 24px;
 }
 
 .database h2 {
