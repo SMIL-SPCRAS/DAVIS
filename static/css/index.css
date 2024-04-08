@@ -70,6 +70,19 @@ section {
   padding: 0 24px;
 }
 
+.cite {
+  padding: 50px 0px;
+  border-bottom: 1px solid #363636;
+}
+
+.cite-section {
+  padding: 0 24px;
+}
+
+.cite pre{
+  white-space:pre-wrap;
+}
+
 .database h2 {
   display: block;
   text-align: center;
